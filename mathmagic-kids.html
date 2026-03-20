@@ -85,12 +85,6 @@ main{padding:14px 14px 90px;max-width:680px;margin:0 auto;position:relative;z-in
 .conv-tbl td:first-child{font-weight:900;color:var(--dark);}
 .conv-tbl td:last-child{color:#666;font-weight:600;}
 
-/* ── memory trick ── */
-.trick-card{background:linear-gradient(135deg,#fffde7,#fff9c4);border-top:5px solid #F9CA24;}
-.trick-text{font-size:14px;color:#555;line-height:1.7;font-weight:600;}
-.gallery{display:flex;gap:8px;overflow-x:auto;margin-top:12px;padding-bottom:4px;scrollbar-width:none;}
-.gallery::-webkit-scrollbar{display:none;}
-.gallery img{height:75px;width:110px;object-fit:cover;border-radius:10px;flex-shrink:0;box-shadow:0 3px 10px #0002;}
 
 /* ── quiz ── */
 .quiz-wrap{display:flex;flex-direction:column;gap:14px;}
@@ -647,14 +641,6 @@ function renderLearn(){
       ${card.content}
     </div>`;
   });
-
-  // gallery
-  const allImgs=[IMGS.fundament,IMGS.algebra,IMGS.geometry,IMGS.notebook1,IMGS.notebook2];
-  html+=`<div class="card trick-card" style="animation-delay:.5s">
-    <div class="card-top"><span class="card-emoji">📸</span><div class="card-title" style="color:#e67e22">Your Study Notes</div></div>
-    <div class="trick-text">Here are your actual handwritten & printed notes — swipe through! 👀</div>
-    <div class="gallery">${allImgs.map(s=>`<img src="data:image/jpeg;base64,${s}" alt="note"/>`).join('')}</div>
-  </div>`;
 
   return html;
 }
