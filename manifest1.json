@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "MathMagic Kids",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "MathMagic Kids",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://claude.ai/favicon.ico",
+      "type": "image/x-icon",
+      "isSquare": false,
+      "isPng": false,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    }
+  ],
+  "id": "20268105",
+  "description": "MathMagic Kids is a fun, interactive mathematics learning web app designed for kids and students who want to understand basic math concepts through colorful formula cards, memory tricks, and quizzes — all without needing to install anything."
+}
